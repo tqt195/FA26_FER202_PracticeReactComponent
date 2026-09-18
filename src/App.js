@@ -1,24 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import MyProfile, { MySubject } from './BaseComponent/MyProfile';
+import BaseUseState from './StateHook/BaseUseState';
+import Navigation from './Navigation';
+import Pets from './Pets';
+import Footer from './Footer';
+
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <>
+    <Navigation/>
+    <Pets/>
+    <Footer/>
+    {/* <MyProfile textInfo={"textValue"} avatarInfo={{
+      alt: "ava ava",
+      src: "https://th.bing.com/th/id/OIP.0xJa5a25OKgjP7H4QqftaAHaEK?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
+    }}/>
+    <MySubject/>
+    
+    <BaseUseState/> */}
+    </>
+    
   );
 }
 
