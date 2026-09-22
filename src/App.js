@@ -5,6 +5,8 @@ import BaseUseState from './StateHook/BaseUseState';
 import Navigation from './Navigation';
 import Pets from './Pets';
 import Footer from './Footer';
+import Main from './Main';
+
 
 
 
@@ -16,6 +18,7 @@ function App() {
     <>
     <Navigation/>
     <Pets/>
+    <Main/>
     <Footer/>
     {/* <MyProfile textInfo={"textValue"} avatarInfo={{
       alt: "ava ava",
@@ -24,6 +27,7 @@ function App() {
     <MySubject/>
     
     <BaseUseState/> */}
+    
     </>
     
   );

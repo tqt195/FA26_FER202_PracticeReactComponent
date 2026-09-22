@@ -1,12 +1,15 @@
 import React from 'react'
-import { Players } from 'src/shared/ListOfPlayers'
+import { footballers } from '../src/shared/ListOfPlayers'
 export default function Players() {
     return (
     <div className='container'>
-             {Players.map((player) =>(
+             {footballers.map((player) =>(
                <div className='column'>
            <div className='card'>
-           <img src='{player.img}'/>
+           <img src={player.img}/>
+           <h3>{player.name}</h3>
+             <p className='title'>{player.club}</p>
+
              <h3></h3>
              <p className='title'></p>
              <p><button>Detail</button></p>
